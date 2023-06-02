@@ -6,7 +6,7 @@
            :asset-path "/vehicles-js"
            :compiler-options {:output-feature-set :es2018}
 
-           :modules {:app {:entries [benni.clojure-in-toys.main]}}
+           :modules {:app {:entries [ftlm.vehicles.main]}}
            :release {:compiler-options {:optimizations :advanced
                                         :infer-externs :auto}}
 

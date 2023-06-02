@@ -42,7 +42,7 @@
    :host host-canvas
    :size [500 500]
    :setup setup
-   ;; :update update-state
+   :update update-state
    :draw draw-state
    :features [:keep-on-top]
    :middleware [m/fun-mode]))
@@ -63,8 +63,7 @@
 (defn ^:dev/after-load mount-root []
   (rf/clear-subscription-cache!)
   (rdom/render
-   [:div "hi"
-    [view]]
+   [view]
    (.getElementById js/document "app")))
 
 (defn init!
